@@ -1,199 +1,559 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Poppins'; 
+  src: url('Fonts/Poppins/Poppins-Black.ttf') format('truetype');  
+}
+
+body, ul{
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 header{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 70px;
-    background-color:#003C43;
+  padding: 20px 20px;
+  height: 100px; 
+  align-items: center;
+  background-image: url('Pictures/background2.jpg.');
+  
 }
 
-.blob1{
-    width: 40px;
-    height: 40px;
-    background-color:rgb(255, 255, 255);
-    border-radius: 50%;
-    margin-left: 20px;
+.navbar{
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  overflow: visible;
+  padding: 0;
 }
 
-.blob1{
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
+.logo img{
+  height: 40px;
+  width: auto;
 }
 
-.nav{
-    display: flex;
-    list-style-type: none;
-    text-transform: uppercase;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+.nav-list{
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
-.nav li{
-    margin: 0 10px;
+.nav-link{
+  padding: 10px 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 20px;
+  color: #084b38;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
 }
 
-.nav a{
-    border-radius: 10%;
-    background-color: #135D66;
-    text-decoration: none;
-    text-shadow:2px 2px#003C43;
-    color: #ddf6f9;
-    font-size: larger;
-    padding: 10px 10px;
-    display: block;
+.nav-link:hover{
+  background-color: #1C3636;
+  color: #ffffff;
 }
 
-.Home{
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: flex-start;
-    position: relative;
+.nav-link:active{
+  background-color: #ffffff;
+  color: #1C3636;
 }
 
-.triangle{
-    position: absolute;
+.Hero{
+  width: 100%;
+  height: 135vh;
+  background-image: url('Pictures/background2.jpg');
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
-.triangle1{
-    width: 0;
-    height: 0;
-    border-left: 7.3in solid transparent;
-    border-top: 7.5in solid #003C43;
-    left:0;
+.Name img{
+  position: relative;
+  left: 100px;
+  top: 25px;
+  z-index: 1;
 }
 
-.triangle2{
-    width: 0;
-    height: 0;
-    border-left: 7.3in solid transparent;
-    border-top: 7.5in solid #6A9C89;
-    left:120px;
+.Portrait img{
+  height: 45%;
+  width: 45%;
+  position: relative;
+  left: 800px;
+  bottom: 625px;
 }
 
-.triangle3{
-    width: 0;
-    height: 0;
-    border-left: 7.3in solid transparent;
-    border-top: 7.5in solid #C4DAD2;
-    left: 240px;
+.Fullname{
+  font-family:'Poppins';
+  letter-spacing: 7px;
+  position: relative;
+  z-index: 2;
+  top: 5px;
+  left: 140px;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+h6, h4{
+  font-family: 'Poppins';
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #1C3636;
+  font-size: 20px;
+}
+
+.Job1{
+  position: relative;
+  left: 140px;
+}
+
+.Job2{
+  position: relative;
+  left: 140px;
+}
+
+.Job3{
+  position: relative;
+  bottom: 61px;
+  left: 460px;
+}
+
+.Job4{
+  position: relative;
+  bottom: 61px;
+  left: 460px;
+}
+
+.Profilepic img{
+  object-fit: cover;
+  clip-path: circle(40% at 50% 50%);
+  transform: scale(0.07);
+  position: relative;
+  bottom: 1000px;
+  right: 750px;
+}
+
+.Desc1{
+  position: relative;
+  bottom: 1640px;
+  left: 125px;
+}
+
+.Desc2{
+  position: relative;
+  bottom: 1645px;
+  left: 125px;
 }
 
 .Hobbies{
-    width: 100%;
-    height: 100vh;
-    background-color: #ddf6f9;
+  height: 125vh;
+  width: 100%;
 }
 
-.Hobbies{
-    width: 100%;
-    height: 100vh;
-    background-color: #ddf6f9;
-    position: relative;
+.Title1, .Title2{
+  color: #1C3636;
+  font-family: 'Poppins';
+  font-size: 80px;
+  letter-spacing: 10px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 50px;
 }
 
-.background1{
-    width: 100%;
-    height: 100vh;
-    background-color:#003C43;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+.Selections1{
+  height: 550px;
+  width: 100%;
+  background-color: #468585;
+  padding-left:10px;
+  padding-right:10px;
+  position: relative;
+  top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px; 
+  background-image: url('Pictures/checkereddesign.png');
 }
 
-.BoxTitle1{
-    width: 500px;
-    height: 100px;
-    background-color: #ddf6f9;
-    border-radius: 5%;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    position: absolute;
-    top: 30px;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: xx-large;
-    font-weight: 500;
+.Hobby{
+  height: 85%;
+  width:30%;
+  background-color: azure;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  transition: transform 0.8s ease-out;
 }
 
-.Trapezoid{
-    width: 400px;
-    height: 400px;
-    background-color: #C4DAD2;
-    transform:skew(20deg)
+.Hobby:Hover{
+  transform: translateY(-30px);
+}
+.Picture{
+  height: 60%;
+  width: 100%;
 }
 
-.Trapezoid{
-    display: flex;
-    flex-direction: row;
-    margin: 30px 30px 0;
+.Picture img{
+  height: 100%;
+  max-width: 100%;
 }
 
-.HalfTrapezoid2{
-    width:0;
-    height:0;
-    border-left: 100px solid transparent;
-    border-bottom: 100px solid #ddf6f9;
-    display:flex;
-    justify-content: center;
-    align-items: flex-end;
+.HobbyDesc{
+  height: 40%;
+  width: 100%;
+  color: #1C3636;
+  font-family: 'Poppins';
+  font-size: 20px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.Latest{
+  height: 130vh;
+  width: 100%;
+  background-image: url('Pictures/Mybackground.png');
+}
+
+.Title2{
+  position: relative;
+  top: 35px;
+}
+
+.Selections2{
+  height: 550px;
+  width: 100%;
+  padding-left:30px;
+  padding-right:30px;
+  position: relative;
+  top: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px; 
+}
+
+.News{
+  height: 85%;
+  width:30%;
+  background-color: azure;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.NewsPara{
+  height: 40%;
+  width: 100%;
+  color: #1C3636;
+  font-family: 'Poppins';
+  font-size: 23px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.NewsTitle{
+  font-family: 'Poppins';
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #1C3636;
+  font-size: 25px;
+}
+
+.NewsDesc, .HobbyDesc1{
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
 }
 
 .Skills{
-    width: 100%;
-    height: 200vh;
-    background-color: #ddf6f9;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  height: 170vh;
+  width: 100%;
 }
 
-.BoxTitle2{
-    width: 500px;
-    height: 100px;
-    background-color: #003C43;
-    border-radius: 5%;
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    text-transform: uppercase;
-    text-align: center;
-    font-size: xx-large;
-    font-weight: 500;
-}
-.Box{
-    width:700px;
-    height:300px;
-    background-color: #003C43;
-    display:flex;
-    flex-direction: column;
-    row-gap: 5px;
+.SkillContainer1{
+  height: 180px;
+  width:100%;
+  display: flex;
+  position:relative;
+  top: 100px;
 }
 
-.background2{
-    width: 100%;
-    height: 100vh;
-    background-color:#003C43;
+.Skill{
+  height: 100%;
+  width: 50%;
+  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.block{
+  height: 100%;
+  width: 50%;
+  background-image: url('Pictures/block.png');
+}
+
+.SkillTitle{
+  font-family: 'Poppins';
+  font-weight: 700;
+  color: #1C3636;
+  font-size: 35px;
+}
+
+.SkillDesc{
+  font-family: 'Courier New', Courier, monospace;
+  color: #1C3636;
+  font-size: 22px;
+  text-align: justify;
+}
+
+.Stats{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: 150px;
+  left: 50px;
+}
+
+.Stats img{
+  height: auto;
+  width: 1200px;
 }
 
 .Gallery{
-    width: 100%;
-    height: 100vh;
-    background-color: #ddf6f9;
+  height: 160vh;
+  width: 100%;
+  background-image: url('Pictures/background2.jpg');
 }
 
-.background3{
-    width: 100%;
-    height: 100vh;
-    background-color:#003C43;
+.PhotoContainer1{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  position: relative;
+  top: 50px;
 }
+
+.Photo{
+  height: 88%;
+  width: 23%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: transform 0.3s ease-in;
+}
+
+.Photo:Hover{
+  transform: scale(1.1);
+}
+
+.Photo img{
+  height: 100%;
+  width: 100%;
+}
+
+.InspirationalQuote{
+  width: 100%;
+  height: 300px;
+}
+
+.Banner{
+  height: 90%;
+  width: 100%;
+  background: linear-gradient(90deg, #206c6e, #90efe2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.Banner img{
+  width: 80%;
+  height: 100%;
+}
+
+.Feedbacks{
+  height: 80vh;
+  width: 100vw;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  background-image: url('Pictures/background2.jpg');
+}
+
+.FeedbackTitle{
+  padding-bottom: 80px;
+}
+
+.BigFeedback{
+  height: 80%;
+  width: 45%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  padding: 20px;
+  background-color: aliceblue;
+}
+
+.Profile{
+  height: 30%;
+  width: 100%;
+  display: flex;
+}
+
+.SocmedPic{
+  width: 20%;
+  height: 100%;
+  object-fit: cover;
+  clip-path: circle(40% at 50% 50%);
+  transform: scale(0.8);
+}
+
+.PersonInfo{
+  height: auto;
+  width: 80%;
+  position: relative;
+  top: 30px;
+  letter-spacing: 2px;
+
+
+}
+.PersonName{
+  font-family: 'Poppins';
+  font-weight: 700;
+  color: #1C3636;
+  font-size: 24px;
+}
+
+.PersonPosition{
+  font-family: 'Poppins';
+  font-weight: 400;
+  color: #206c6e;
+  font-size: 18px;
+  position: relative;
+  bottom: 8px;
+}
+
+.Comment{
+  width:100%;
+  height: 70%;
+  padding: 20px 30px;
+}
+.PersonComment{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  color: #1C3636;
+  font-size: 22px;
+  text-align: justify;
+  line-height: 30px;
+}
+
+.ClosingRemarks{
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.ClosingRemarks img{
+  height: 85%;
+  width: 60%;
+}
+
+.SMIcons{
+  width:100%;
+  height: 20%;
+  display:flex;
+  padding-left: 25px;
+}
+
+.SM{
+  transform: scale(1.2);
+  width: 6%;
+}
+
+.SM1:hover{
+  transform: scale(1.4);
+}
+
+footer{
+  height: 30vh;
+  width: 100%;
+}
+
+.FooterBanner{
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, #206c6e, #90efe2);
+  display: flex;
+}
+
+.LeftFooter, .RightFooter{
+  height: 100%;
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Poppins';
+  font-size: 15px;
+  color: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 600px;
+}
+
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Poppins';
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+
+input[type="email"]:focus {
+  border-color: #468585;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #468585;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1C3636;
+}
+
+
+
